@@ -1,19 +1,38 @@
 // Load the custom font data from the font file
-// import { font } from './Saans-Regular-normal.js';
+const { jsPDF } = window.jspdf;
 
-// console.log(font);
+const doc = new jsPDF({
+  format: 'a4'
+});
 
-// Create a new jsPDF instance
-var doc = new jsPDF();
+// SETTINGS
+// Add custom fonts
+doc.addFont("Saans-Regular.ttf", "Saans-Regular", "regular");
+doc.addFont("Saans-Bold.ttf", "Saans-Bold", "bold");
 
-// Add the custom font data???
+// HEADER
+doc.setFontSize(32);
+doc.setFont("Saans-Regular", "regular");
+doc.text(6, 15, 'Displaay');
+doc.text(6, 27, 'Type Foundry');
 
-// Set the custom font
-// doc.setFont("Saans-Regular");
-doc.setFontType("normal");
+const imgLogo = "df_logo.png";
+doc.addImage(imgLogo, "PNG", 190, 5, 12.5, 12.5);
 
-// Add text using the custom font
-doc.text(20, 50, 'This is Saans Regular.');
+// SECTION 1
+doc.setFontSize(8);
+doc.setFont("Saans-Regular", "regular");
+doc.text(6, 46.5, 'INVOICE NO.:');
+doc.setFont("Saans-Bold", "bold");
+doc.text(23.5, 46.5, '021');
 
-// Save the PDF
+doc.setLineWidth(0.5);
+doc.line(6, 50, 203.5, 50);
+
+doc.setFont("Saans-Regular", "regular");
+doc.text(6, 56, 'SUPPLIER');
+
+doc.text(6, 62, 'Company: Displaay Type Foundry s.r.o.');
+doc.text(6, 66, 'Address: U Libeňského pivovaru 2442/6');
+
 doc.save('template1.pdf');
