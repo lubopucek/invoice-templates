@@ -1,7 +1,7 @@
 // Load the custom font data from the font file
-import { font } from './Saans-Regular-normal.js';
+// import { font } from './Saans-Regular-normal.js';
 
-console.log(font);
+// console.log(font);
 
 // Create a new jsPDF instance
 var doc = new jsPDF();
@@ -9,7 +9,7 @@ var doc = new jsPDF();
 // Add the custom font data???
 
 // Set the custom font
-doc.setFont("Saans-Regular");
+// doc.setFont("Saans-Regular");
 doc.setFontType("normal");
 
 // Add text using the custom font
