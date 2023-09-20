@@ -13,14 +13,14 @@ doc.addFont("Saans-Bold.ttf", "Saans-Bold", "bold");
 
 // HEADER
 
-// TITLE
+// HEADER - TITLE
 
 doc.setFontSize(28);
 doc.setFont("Saans-Regular", "regular");
 doc.text(6, 15, 'Displaay');
 doc.text(6, 25, 'Type Foundry');
 
-// LOGO
+// HEADER - LOGO
 
 const imgLogo = "df_logo.png";
 doc.addImage(imgLogo, "PNG", 190, 5, 12.5, 12.5);
@@ -29,8 +29,9 @@ doc.addImage(imgLogo, "PNG", 190, 5, 12.5, 12.5);
 
 doc.setFontSize(7);
 
-// SECTION 1 - TITLE AND LINE
+// SECTION 1 - INVOICE NO. AND LINE
 
+doc.setFont("Saans-Regular", "regular");
 doc.text(6, 47, 'INVOICE NO.:');
 doc.setFont("Saans-Bold", "bold");
 doc.text(21.5, 47, '021');
