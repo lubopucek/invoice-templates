@@ -1,13 +1,15 @@
-// Load the custom font data from the font file
 const { jsPDF } = window.jspdf;
+
+// SETTINGS
+
+// FORMAT
 
 const doc = new jsPDF({
   format: 'a4'
 });
 
-// SETTINGS
+// ADD CUSTOM FONTS
 
-// Add custom fonts
 doc.addFont("Saans-Regular.ttf", "Saans-Regular", "regular");
 doc.addFont("Saans-Bold.ttf", "Saans-Bold", "bold");
 
