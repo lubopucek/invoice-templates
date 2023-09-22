@@ -68,14 +68,14 @@ doc.text(72, 67, 'Stripe number: XXX');
 
 doc.setFont("Saans-Regular", "regular");
 doc.text(145, 55, 'CUSTOMER (ENTREPRENEUR)');
-doc.text(145, 61, 'Name Surname/Company: abc');
-doc.text(145, 64, 'Address: xyz');
-doc.text(145, 67, 'Post Code: 123, City: rgb');
-doc.text(145, 70, 'Country: United Arab Emirates');
-doc.text(145, 73, 'Email: abc@email.com');
-doc.text(145, 76, 'ID Number: 09224823');
-doc.text(145, 79, 'VAT Number: CZ09224823');
-doc.text(145, 82, 'PO Number: 1234');
+doc.text(145, 61, 'Name Surname: Kantoor Kolos');
+doc.text(145, 64, 'Address: Veemarkt37/A3');
+doc.text(145, 67, 'Post Code: 2800, City: Mechelen');
+doc.text(145, 70, 'Country: Belgium,EU');
+doc.text(145, 73, 'Email: kenzo@kantoorkolos.be');
+doc.text(145, 76, 'ID Number: NA');
+doc.text(145, 79, 'VAT Number: NA');
+doc.text(145, 82, 'PO Number: NA');
 
 // SECTION 2
 
@@ -134,15 +134,13 @@ doc.line(6, 141, 203.5, 142);
 
 doc.setFont("Saans-Regular", "regular");
 doc.text(6, 146, 'SUBTOTAL (excl. VAT)');
-doc.text(6, 149, 'Discounts');
-doc.text(6, 152, 'VAT 0%');
+doc.text(6, 149, 'VAT 19%');
 
 // SECTION 2.2 - MIDDLE
 
 doc.setFont("Saans-Regular", "regular");
-doc.text(72, 146, '5000 € / 4800,51 CZK');
-doc.text(72, 149, '-1000 € / -1800,51 CZK');
-doc.text(72, 152, '0 € / 0,00 CZK');
+doc.text(72, 146, '91 € / 2206,30 CZK');
+doc.text(72, 149, '17,29 € / 419,20 CZK');
 
 // SECTION 2.2 - RIGHT
 
@@ -181,11 +179,11 @@ doc.text(72, 183, '13 € / 4800,51 CZK');
 
 doc.setFont("Saans-Regular", "regular");
 doc.text(145, 171, 'DELIVERY ADDRESS');
-doc.text(145, 177, 'Name Surname/Company: abc');
-doc.text(145, 180, 'Address: xyz');
-doc.text(145, 183, 'Post Code: 123 00, City: Los Angeles');
-doc.text(145, 186, 'Country: cmyk');
-doc.text(145, 189, 'Email: abc@email.com');
+doc.text(145, 177, 'Name Surname: Kantoor Kolos');
+doc.text(145, 180, 'Address: Veemarkt 37/A3');
+doc.text(145, 183, 'Post Code: 2800, City: Mechelen');
+doc.text(145, 186, 'Country: Belgium');
+doc.text(145, 189, 'Email: kenzo@kantoorkolos.be');
 doc.text(145, 192, 'Phone: +420 123 456 789');
 
 // SECTION 3.2 - LINE
@@ -197,25 +195,21 @@ doc.line(6, 196, 203.5, 196);
 
 doc.setFont("Saans-Regular", "regular");
 doc.text(6, 201, 'SUBTOTAL (excl. VAT)');
-doc.text(6, 204, 'Discounts');
-doc.text(6, 207, 'VAT 0%');
-doc.text(6, 210, 'Shipping');
+doc.text(6, 204, 'VAT 19%');
+doc.text(6, 207, 'Shipping');
 
 // SECTION 3.2 - MIDDLE
 
 doc.setFont("Saans-Regular", "regular");
-doc.text(72, 201, '5000 € / 4800,51 CZK');
-doc.text(72, 204, '-1000 € / -1800,51 CZK');
-doc.text(72, 207, '0 € / 0,00 CZK');
-doc.text(72, 210, '18 € / 280 CZK');
+doc.text(72, 201, '91 € / 2206,30 CZK');
+doc.text(72, 204, '17,29 € / 419,20 CZK');
+doc.text(72, 207, '18 € / 280 CZK');
 
 // SECTION 3.2 - RIGHT
 
 doc.setFont("Saans-Regular-Italic", "italic");
-doc.text(145, 201, 'You have ordered goods to be shipped outside the');
-doc.text(145, 204, 'EU: “The performance is exempt from VAT under §66');
-doc.text(145, 207, 'of the Value Added Tax Act with the right to deduct');
-doc.text(145, 210, 'the tax.');
+doc.text(145, 201, 'Merchedise is managed in');
+doc.text(145, 204, 'OSS (One Stop Shop) mode.');
 
 // SECTION 4
 
@@ -234,15 +228,15 @@ doc.text(6, 219, 'TOTAL (incl. VAT)');
 // SECTION 4 - MIDDLE
 
 doc.setFont("Saans-Bold", "bold");
-doc.text(72, 219, '45 000 € / 34 800,51 CZK');
+doc.text(72, 219, '108,29 € / 2 625,49 CZK');
 
 // FOOTER
 
 // FOOTER - NOTE
 
 doc.setFont("Saans-Regular-Italic", "italic");
-doc.text(6, 288, 'Note: Invoice in Reverse charge mode. The buyer is obligated to fill in the VAT amounts and pay the tax.');
-doc.text(6, 291, '(Except Czech Republic customers)');
+doc.text(6, 288, 'Displaay Type Foundry is independent studio based in Prague, Czech Republic.');
+doc.text(6, 291, 'Est.2014');
 
 // FOOTER - SIGNATURE
 
@@ -254,4 +248,4 @@ doc.text(145, 291, 'Martin Vácha, CEO');
 
 // SAVE FILE
 
-doc.save('template1.pdf');
+doc.save('template2.pdf');

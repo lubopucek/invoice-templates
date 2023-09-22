@@ -37,7 +37,7 @@ doc.setFontSize(7);
 doc.setFont("Saans-Regular", "regular");
 doc.text(6, 47, 'INVOICE NO.:');
 doc.setFont("Saans-Bold", "bold");
-doc.text(21.5, 47, '021');
+doc.text(21.5, 47, '022');
 doc.setLineWidth(0.3);
 doc.line(6, 50, 203.5, 50);
 
@@ -59,10 +59,20 @@ doc.text(6, 91, 'Inset 332873.');
 // SECTION 1 - MIDDLE
 
 doc.setFont("Saans-Regular", "regular");
-doc.text(72, 55, 'PURCHASE DETAILS');
-doc.text(72, 61, 'Date of taxable supply: 09/8/2023 09:58 (CET)');
-doc.text(72, 64, 'CNB rate for this date : 1 € = 24,245 CZK');
-doc.text(72, 67, 'Stripe number: XXX');
+doc.text(72, 55, 'PAYMENT DETAILS ');
+doc.text(72, 61, 'Date of taxable supply: 30/6/2023)');
+doc.text(72, 64, 'Date of Issue: 30/6/2023');
+doc.text(72, 67, 'Due date: 30/7/2023');
+doc.text(72, 70, 'Reference number:');
+doc.setFont("Saans-Bold", "bold");
+doc.text(94, 70, '022');
+doc.setFont("Saans-Regular", "regular");
+doc.text(72, 76, 'SWIFT (BIC): REVOLT21');
+doc.text(72, 79, 'IBAN (EUR): LT78 3250 0786 1291 2532');
+doc.text(72, 85, 'Bank name: Revolut Bank UAB');
+doc.text(72, 88, 'Bank address: Konstitucijos ave. 21B,');
+doc.text(72, 91, '08130 Vilnius, the Republic of Lithuania');
+doc.text(72, 94, 'Branch code: XXX');
 
 // SECTION 1 - RIGHT
 
@@ -144,97 +154,24 @@ doc.text(72, 146, '5000 € / 4800,51 CZK');
 doc.text(72, 149, '-1000 € / -1800,51 CZK');
 doc.text(72, 152, '0 € / 0,00 CZK');
 
-// SECTION 2.2 - RIGHT
-
-doc.setFont("Saans-Regular-Italic", "italic");
-doc.text(145, 146, 'If you need to update your licenses via your account,');
-doc.text(145, 149, 'please log in via the website: displaay.net.');
-
 // SECTION 3
 
 doc.setFontSize(7);
 
-// SECTION 3.1 - LINE
+// SECTION 3 - LINE
 
 doc.setLineWidth(0.3);
-doc.line(6, 166, 203.5, 166);
+doc.line(6, 156, 203.5, 156);
 
-// SECTION 3.1 - LEFT
-
-doc.setFont("Saans-Bold", "bold");
-doc.text(6, 171, 'MERCH STORE:');
-doc.setFont("Saans-Regular", "regular");
-doc.text(25, 171, 'OFFLINE');
-doc.text(6, 177, 'Offline Beanie (Size: M, Colour: Red)');
-doc.text(6, 180, 'Offline Beanie (Size: M, Colour: Red)');
-doc.text(6, 183, 'Offline PINS');
-
-// SECTION 3.1 - MIDDLE
-
-doc.setFont("Saans-Regular", "regular");
-doc.text(72, 171, 'PRICE PER ITEM ');
-doc.text(72, 177, '30 € / 4800,51 CZK');
-doc.text(72, 180, '30 € / 4800,51 CZK');
-doc.text(72, 183, '13 € / 4800,51 CZK');
-
-// SECTION 3.1 - RIGHT
-
-doc.setFont("Saans-Regular", "regular");
-doc.text(145, 171, 'DELIVERY ADDRESS');
-doc.text(145, 177, 'Name Surname/Company: abc');
-doc.text(145, 180, 'Address: xyz');
-doc.text(145, 183, 'Post Code: 123 00, City: Los Angeles');
-doc.text(145, 186, 'Country: cmyk');
-doc.text(145, 189, 'Email: abc@email.com');
-doc.text(145, 192, 'Phone: +420 123 456 789');
-
-// SECTION 3.2 - LINE
-
-doc.setLineWidth(0.1);
-doc.line(6, 196, 203.5, 196);
-
-// SECTION 3.2 - LEFT
-
-doc.setFont("Saans-Regular", "regular");
-doc.text(6, 201, 'SUBTOTAL (excl. VAT)');
-doc.text(6, 204, 'Discounts');
-doc.text(6, 207, 'VAT 0%');
-doc.text(6, 210, 'Shipping');
-
-// SECTION 3.2 - MIDDLE
-
-doc.setFont("Saans-Regular", "regular");
-doc.text(72, 201, '5000 € / 4800,51 CZK');
-doc.text(72, 204, '-1000 € / -1800,51 CZK');
-doc.text(72, 207, '0 € / 0,00 CZK');
-doc.text(72, 210, '18 € / 280 CZK');
-
-// SECTION 3.2 - RIGHT
-
-doc.setFont("Saans-Regular-Italic", "italic");
-doc.text(145, 201, 'You have ordered goods to be shipped outside the');
-doc.text(145, 204, 'EU: “The performance is exempt from VAT under §66');
-doc.text(145, 207, 'of the Value Added Tax Act with the right to deduct');
-doc.text(145, 210, 'the tax.');
-
-// SECTION 4
-
-doc.setFontSize(7);
-
-// SECTION 4 - LINE
-
-doc.setLineWidth(0.3);
-doc.line(6, 214, 203.5, 215);
-
-// SECTION 4 - LEFT
+// SECTION 3 - LEFT
 
 doc.setFont("Saans-Bold", "bold");
-doc.text(6, 219, 'TOTAL (incl. VAT)');
+doc.text(6, 160, 'TOTAL (incl. VAT)');
 
-// SECTION 4 - MIDDLE
+// SECTION 3 - MIDDLE
 
 doc.setFont("Saans-Bold", "bold");
-doc.text(72, 219, '45 000 € / 34 800,51 CZK');
+doc.text(72, 160, '45 000 € / 34 800,51 CZK');
 
 // FOOTER
 
@@ -254,4 +191,4 @@ doc.text(145, 291, 'Martin Vácha, CEO');
 
 // SAVE FILE
 
-doc.save('template1.pdf');
+doc.save('template5.pdf');
