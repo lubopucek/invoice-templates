@@ -1,3 +1,5 @@
+// TEMPLATE 5
+
 const { jsPDF } = window.jspdf;
 
 // SETTINGS
@@ -37,7 +39,7 @@ doc.setFontSize(7);
 doc.setFont("Saans-Regular", "regular");
 doc.text(6, 47, 'INVOICE NO.:');
 doc.setFont("Saans-Bold", "bold");
-doc.text(21.5, 47, '022');
+doc.text(21.5, 47, '023');
 doc.setLineWidth(0.3);
 doc.line(6, 50, 203.5, 50);
 
@@ -60,12 +62,12 @@ doc.text(6, 91, 'Inset 332873.');
 
 doc.setFont("Saans-Regular", "regular");
 doc.text(72, 55, 'PAYMENT DETAILS ');
-doc.text(72, 61, 'Date of taxable supply: 30/6/2023)');
+doc.text(72, 61, 'Date of taxable supply: 30/6/2023');
 doc.text(72, 64, 'Date of Issue: 30/6/2023');
 doc.text(72, 67, 'Due date: 30/7/2023');
 doc.text(72, 70, 'Reference number:');
 doc.setFont("Saans-Bold", "bold");
-doc.text(94, 70, '022');
+doc.text(94, 70, '023');
 doc.setFont("Saans-Regular", "regular");
 doc.text(72, 76, 'SWIFT (BIC): REVOLT21');
 doc.text(72, 79, 'IBAN (EUR): LT78 3250 0786 1291 2532');
@@ -150,8 +152,8 @@ doc.text(6, 152, 'VAT 0%');
 // SECTION 2.2 - MIDDLE
 
 doc.setFont("Saans-Regular", "regular");
-doc.text(72, 146, '5000 € / 4800,51 CZK');
-doc.text(72, 149, '-1000 € / -1800,51 CZK');
+doc.text(72, 146, '5 000 € / 4 800,51 CZK');
+doc.text(72, 149, '-1 000 € / -1 800,51 CZK');
 doc.text(72, 152, '0 € / 0,00 CZK');
 
 // SECTION 3

@@ -1,3 +1,5 @@
+// TEMPLATE 2
+
 const { jsPDF } = window.jspdf;
 
 // SETTINGS
@@ -67,11 +69,11 @@ doc.text(72, 67, 'Stripe number: XXX');
 // SECTION 1 - RIGHT
 
 doc.setFont("Saans-Regular", "regular");
-doc.text(145, 55, 'CUSTOMER (ENTREPRENEUR)');
+doc.text(145, 55, 'CUSTOMER (NON-ENTREPRENEUR)');
 doc.text(145, 61, 'Name Surname: Kantoor Kolos');
-doc.text(145, 64, 'Address: Veemarkt37/A3');
+doc.text(145, 64, 'Address: Veemarkt 37/A3');
 doc.text(145, 67, 'Post Code: 2800, City: Mechelen');
-doc.text(145, 70, 'Country: Belgium,EU');
+doc.text(145, 70, 'Country: Belgium, EU');
 doc.text(145, 73, 'Email: kenzo@kantoorkolos.be');
 doc.text(145, 76, 'ID Number: NA');
 doc.text(145, 79, 'VAT Number: NA');
@@ -139,7 +141,7 @@ doc.text(6, 149, 'VAT 19%');
 // SECTION 2.2 - MIDDLE
 
 doc.setFont("Saans-Regular", "regular");
-doc.text(72, 146, '91 € / 2206,30 CZK');
+doc.text(72, 146, '91 € / 2 206,30 CZK');
 doc.text(72, 149, '17,29 € / 419,20 CZK');
 
 // SECTION 2.2 - RIGHT
@@ -171,9 +173,9 @@ doc.text(6, 183, 'Offline PINS');
 
 doc.setFont("Saans-Regular", "regular");
 doc.text(72, 171, 'PRICE PER ITEM ');
-doc.text(72, 177, '30 € / 4800,51 CZK');
-doc.text(72, 180, '30 € / 4800,51 CZK');
-doc.text(72, 183, '13 € / 4800,51 CZK');
+doc.text(72, 177, '30 € / 419,20 CZK');
+doc.text(72, 180, '30 € / 419,20 CZK');
+doc.text(72, 183, '13 € / 419,20 CZK');
 
 // SECTION 3.1 - RIGHT
 
@@ -201,7 +203,7 @@ doc.text(6, 207, 'Shipping');
 // SECTION 3.2 - MIDDLE
 
 doc.setFont("Saans-Regular", "regular");
-doc.text(72, 201, '91 € / 2206,30 CZK');
+doc.text(72, 201, '91 € / 2 206,30 CZK');
 doc.text(72, 204, '17,29 € / 419,20 CZK');
 doc.text(72, 207, '18 € / 280 CZK');
 
@@ -236,7 +238,7 @@ doc.text(72, 219, '108,29 € / 2 625,49 CZK');
 
 doc.setFont("Saans-Regular-Italic", "italic");
 doc.text(6, 288, 'Displaay Type Foundry is independent studio based in Prague, Czech Republic.');
-doc.text(6, 291, 'Est.2014');
+doc.text(6, 291, 'Est. 2014');
 
 // FOOTER - SIGNATURE
 

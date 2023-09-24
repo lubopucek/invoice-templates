@@ -1,3 +1,5 @@
+// TEMPLATE 1
+
 const { jsPDF } = window.jspdf;
 
 // SETTINGS
@@ -140,8 +142,8 @@ doc.text(6, 152, 'VAT 0%');
 // SECTION 2.2 - MIDDLE
 
 doc.setFont("Saans-Regular", "regular");
-doc.text(72, 146, '5000 € / 4800,51 CZK');
-doc.text(72, 149, '-1000 € / -1800,51 CZK');
+doc.text(72, 146, '5 000 € / 4 800,51 CZK');
+doc.text(72, 149, '-1 000 € / -1 800,51 CZK');
 doc.text(72, 152, '0 € / 0,00 CZK');
 
 // SECTION 2.2 - RIGHT
@@ -173,9 +175,9 @@ doc.text(6, 183, 'Offline PINS');
 
 doc.setFont("Saans-Regular", "regular");
 doc.text(72, 171, 'PRICE PER ITEM ');
-doc.text(72, 177, '30 € / 4800,51 CZK');
-doc.text(72, 180, '30 € / 4800,51 CZK');
-doc.text(72, 183, '13 € / 4800,51 CZK');
+doc.text(72, 177, '30 € / 4 800,51 CZK');
+doc.text(72, 180, '30 € / 4 800,51 CZK');
+doc.text(72, 183, '13 € / 4 800,51 CZK');
 
 // SECTION 3.1 - RIGHT
 
@@ -204,8 +206,8 @@ doc.text(6, 210, 'Shipping');
 // SECTION 3.2 - MIDDLE
 
 doc.setFont("Saans-Regular", "regular");
-doc.text(72, 201, '5000 € / 4800,51 CZK');
-doc.text(72, 204, '-1000 € / -1800,51 CZK');
+doc.text(72, 201, '5 000 € / 4 800,51 CZK');
+doc.text(72, 204, '-1 000 € / -1 800,51 CZK');
 doc.text(72, 207, '0 € / 0,00 CZK');
 doc.text(72, 210, '18 € / 280 CZK');
 

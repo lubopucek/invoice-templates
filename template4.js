@@ -1,3 +1,5 @@
+// TEMPLATE 4
+
 const { jsPDF } = window.jspdf;
 
 // SETTINGS
@@ -59,8 +61,8 @@ doc.text(6, 91, 'Inset 332873.');
 // SECTION 1 - MIDDLE
 
 doc.setFont("Saans-Regular", "regular");
-doc.text(72, 55, 'PAYMENT DETAILS ');
-doc.text(72, 61, 'Date of taxable supply: 30/6/2023)');
+doc.text(72, 55, 'PAYMENT DETAILS');
+doc.text(72, 61, 'Date of taxable supply: 30/6/2023');
 doc.text(72, 64, 'Date of Issue: 30/6/2023');
 doc.text(72, 67, 'Due date: 30/7/2023');
 doc.text(72, 70, 'Reference number:');
@@ -150,8 +152,8 @@ doc.text(6, 152, 'VAT 0%');
 // SECTION 2.2 - MIDDLE
 
 doc.setFont("Saans-Regular", "regular");
-doc.text(72, 146, '5000 € / 4800,51 CZK');
-doc.text(72, 149, '-1000 € / -1800,51 CZK');
+doc.text(72, 146, '5 000 € / 4 800,51 CZK');
+doc.text(72, 149, '-1 000 € / -1 800,51 CZK');
 doc.text(72, 152, '0 € / 0,00 CZK');
 
 // SECTION 3
@@ -189,8 +191,8 @@ doc.text(6, 192, 'VAT 0%');
 // SECTION 3.2 - MIDDLE
 
 doc.setFont("Saans-Regular", "regular");
-doc.text(72, 186, '5000 € / 4800,51 CZK');
-doc.text(72, 189, '-1000 € / -1800,51 CZK');
+doc.text(72, 186, '5 000 € / 4 800,51 CZK');
+doc.text(72, 189, '-1 000 € / -1 800,51 CZK');
 doc.text(72, 192, '0 € / 0,00 CZK');
 
 // SECTION 4
